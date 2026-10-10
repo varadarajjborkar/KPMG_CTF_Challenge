@@ -1,7 +1,7 @@
 # KPMG KICyber CTF - Solutions & Writeups
 
 My solve notes, exploit tooling, and artifacts for the **KPMG KICyber CTF**.
-Every flag is in the format `KPMG_CTF{...}`.
+The recovered flags (format `KPMG_CTF{...}`) are recorded in [`ctf.txt`](ctf.txt), not in this README.
 
 This repository is a personal capture log: for each challenge it records the
 vulnerability, the chain used to exploit it, the tooling, and the recovered flag.
@@ -29,79 +29,79 @@ Legend: ✅ solved
 
 ### Web
 
-| Challenge | Technique | Flag | Status |
-|---|---|---|---|
-| TrollClock | Template/clock-skew web bug | `KPMG_CTF{H8PT5O8sUTVaw87yk5XCzeR0fu630unpLyr1WsofvfYF}` | ✅ |
-| [Granny makes food](Granny%20makes%20food/) | Web app logic abuse | `KPMG_CTF{Wk6uvuhHMb2U3dCL-tDTUOC365OYNNFWhFpfKRzdu8EJ}` | ✅ |
-| [The Dragon Warrior](The%20Dragon%20Warrior/) | Web (OpenAPI-driven) logic flaw | `KPMG_CTF{LC0Z9cjBA3yGd_geR1M-dbxKmfj7gNVZMNluLNgrzOF4}` | ✅ |
-| DevNote | SQL injection in a "dev query" interface | `KPMG_CTF{IVQtP6rDVaCc4GTZEoQZyLCet9XOYkO66dhXENV6C1dZ}` | ✅ |
-| [Onboardx](Onboardx/) | **Mass-assignment -> JWT RS256/HS256 confusion -> ImageTragick RCE** (see [featured writeup](#featured-onboardx)) | `KPMG_CTF{-I3OHbxv4qDtW4EuQvmAiQeU4JL78f9Sim4RGA5alSK9}` | ✅ |
+| Challenge | Technique | Status |
+|---|---|---|
+| TrollClock | Template/clock-skew web bug | ✅ |
+| [Granny makes food](Granny%20makes%20food/) | Web app logic abuse | ✅ |
+| [The Dragon Warrior](The%20Dragon%20Warrior/) | Web (OpenAPI-driven) logic flaw | ✅ |
+| DevNote | SQL injection in a "dev query" interface | ✅ |
+| [Onboardx](Onboardx/) | **Mass-assignment -> JWT RS256/HS256 confusion -> ImageTragick RCE** (see [featured writeup](#featured-onboardx)) | ✅ |
 
 ### API security
 
-| Challenge | Technique | Flag | Status |
-|---|---|---|---|
-| Arclight - 1 | Hidden GraphQL field exposure | `KPMG_CTF{h1dd3n_f13ld_n0t_s0_h1dd3n}` | ✅ |
-| Arclight - 2 | GraphQL / API object access | `KPMG_CTF{moWZClsXWrvQiUkeWzwVKy-DUTlfk1QXg5zYZrOmBd15}` | ✅ |
-| TradeBot | API logic abuse | `KPMG_CTF{_FjPCdGoJh92C_SUijOMM4wOsOH6P7T8GGtSGaXPwX0L}` | ✅ |
+| Challenge | Technique | Status |
+|---|---|---|
+| Arclight - 1 | Hidden GraphQL field exposure | ✅ |
+| Arclight - 2 | GraphQL / API object access | ✅ |
+| TradeBot | API logic abuse | ✅ |
 
 ### Boot2root / Linux privilege escalation
 
-| Challenge | Technique | Flag | Status |
-|---|---|---|---|
-| VaultDocs 1.0 | Web LFI -> SSH -> `sudo tar` (GTFOBins) | `KPMG_CTF{In1T6PPEk2TYp_oWjcf6EkePXu2dxELwnRuPNU-k_gV2}` | ✅ |
-| VaultDocs 2.0 | Same box, root objective | `KPMG_CTF{z33IDn2KIal29o20gt_T606CyGMpWNo2m7_p8_dAp9_k}` | ✅ |
-| Voodoo "Spirit of Death" | Exposed Redis -> leaked creds -> SSH | `KPMG_CTF{UJgwFKurnt3ui-Ev92ltHlXlNXvZM5RP1CnldWcbTldG}` | ✅ |
-| Voodoo "Spirit of Death" 2 | Same box, get-to-root | `KPMG_CTF{V3qscJrUP3_Sqah9j_duAtqn3IflX0fEE7iaFwMgU3dg}` | ✅ |
-| [Locks of Confusion - 1](Locks%20of%20Confusion%20-%201/) | **CVE-2008-0166** Debian weak SSH key | `KPMG_CTF{_JcozTookX36JtKATPIQVoRTNKdqytFr0BjDBk2dcsdb}` | ✅ |
-| Locks of Confusion - 2 | Predictable/"decided-beforehand" key -> root | `KPMG_CTF{kZoWg1UzoKPYzXyf69Aad7EKaBxs-gUgJaQfWkil7Utj}` | ✅ |
-| Healthy Hijack - 1 | Command-injection filter bypass -> root | user `KPMG_CTF{E6vuGz3BkSC7pAo7uCWUIw1nAqNxVkIf_Se8dXDjh6e_}` / root `KPMG_CTF{f44284ea179691a9abf03ea7d0b97ffb}` | ✅ |
-| Healthy Hijack - 2 | Same vector as HH-1 | user `KPMG_CTF{b84a3cbaa2c0432b8dcc8ad0a32a007e}` / root `KPMG_CTF{UimO5SDel_BgsnCVjRz_OKZjNWfuSv80pS-ZHLle9rKl}` | ✅ |
+| Challenge | Technique | Status |
+|---|---|---|
+| VaultDocs 1.0 | Web LFI -> SSH -> `sudo tar` (GTFOBins) | ✅ |
+| VaultDocs 2.0 | Same box, root objective | ✅ |
+| Voodoo "Spirit of Death" | Exposed Redis -> leaked creds -> SSH | ✅ |
+| Voodoo "Spirit of Death" 2 | Same box, get-to-root | ✅ |
+| [Locks of Confusion - 1](Locks%20of%20Confusion%20-%201/) | **CVE-2008-0166** Debian weak SSH key | ✅ |
+| Locks of Confusion - 2 | Predictable/"decided-beforehand" key -> root | ✅ |
+| Healthy Hijack - 1 | Command-injection filter bypass -> root | ✅ |
+| Healthy Hijack - 2 | Same vector as HH-1 | ✅ |
 
 ### OSINT
 
-| Challenge | Technique | Flag | Status |
-|---|---|---|---|
-| [Westbound](Westbound/) | Recover deleted git history | `KPMG_CTF{g1t_r3m3mb3r5_wh4t_y0u_d3l3t3}` | ✅ |
-| [Golden Hour](Golden%20Hour/) | Multi-stage persona hunt, EXIF + acrostic + vault | `KPMG_CTF{n0va_dr1ft3d_h0m3}` | ✅ |
-| A Clean Trail | Street-View geolocation -> van phone -> PrivateBin -> profile -> Brainfuck | `KPMG_CTF{3th31c4L_H$ck3r}` | ✅ (identity redacted - see [note](#a-note-on-a-clean-trail)) |
+| Challenge | Technique | Status |
+|---|---|---|
+| [Westbound](Westbound/) | Recover deleted git history | ✅ |
+| [Golden Hour](Golden%20Hour/) | Multi-stage persona hunt, EXIF + acrostic + vault | ✅ |
+| A Clean Trail | Street-View geolocation -> van phone -> PrivateBin -> profile -> Brainfuck | ✅ (identity redacted - see [note](#a-note-on-a-clean-trail)) |
 
 ### Forensics / DFIR
 
-| Challenge | Technique | Flag | Status |
-|---|---|---|---|
-| [Six Ways Out](Six%20Ways%20Out/) | PCAP + endpoint logs; six exfil channels, each with its own transform | `KPMG_CTF{Q7k2mLpk91Xv2QaHncfuEY92kLxP83LmQa7vQm91XeLm92Qx7P}` | ✅ |
-| [Operation Dead Drop](Operation%20Dead%20Drop/) | Artifact / stego trail | `KPMG_CTF{tr4ce_the_intrud3r_follow_the_tr4il}` | ✅ |
-| [Corrupted Vision](Corrupted%20Vision/) | Image repair / recovery | `KPMG_CTF{S33K_AND_F1ND_M3}` | ✅ |
+| Challenge | Technique | Status |
+|---|---|---|
+| [Six Ways Out](Six%20Ways%20Out/) | PCAP + endpoint logs; six exfil channels, each with its own transform | ✅ |
+| [Operation Dead Drop](Operation%20Dead%20Drop/) | Artifact / stego trail | ✅ |
+| [Corrupted Vision](Corrupted%20Vision/) | Image repair / recovery | ✅ |
 
 ### Reversing / Pwn
 
-| Challenge | Technique | Flag | Status |
-|---|---|---|---|
-| [Matrix Reload](Matrix%20Reload/) | Heap use-after-free exploitation | `KPMG_CTF{Matrix_Escaped}` | ✅ |
-| [Algebraic Nightmare](Algebraic%20Nightmare/) | MBA-obfuscated VM reversing | `KPMG_CTF{jQqvGkQ2hCwGodTZSLYoCEW24njncKwz8y67iliFpxTE}` | ✅ |
+| Challenge | Technique | Status |
+|---|---|---|
+| [Matrix Reload](Matrix%20Reload/) | Heap use-after-free exploitation | ✅ |
+| [Algebraic Nightmare](Algebraic%20Nightmare/) | MBA-obfuscated VM reversing | ✅ |
 
 ### OT / ICS / IoT / Mobile
 
-| Challenge | Technique | Flag | Status |
-|---|---|---|---|
-| Baud Intentions | Insecure-by-design web UART console for a fake PLC | `KPMG_CTF{QiiTo4I0_RvPqN8p_fO1l_xQlK-mW-JpEds_MoBWap7a}` | ✅ |
-| [Last Will](Last%20Will/) | MQTT / IIoT message trail | `KPMG_CTF{MvAZjnsrRAcXtU8TnlihJ_X93BTjVf0AMpVevFfC95Q_}` | ✅ |
-| [Latitude of Injection](Latitude%20of%20Injection/) | Android APK + Flask backend SQL injection | `KPMG_CTF{1YpkEDDKbqZIZbjTMW_emNbGwWmmdZh1EZrhdnTahVU_}` | ✅ |
+| Challenge | Technique | Status |
+|---|---|---|
+| Baud Intentions | Insecure-by-design web UART console for a fake PLC | ✅ |
+| [Last Will](Last%20Will/) | MQTT / IIoT message trail | ✅ |
+| [Latitude of Injection](Latitude%20of%20Injection/) | Android APK + Flask backend SQL injection | ✅ |
 
 ### Crypto
 
-| Challenge | Technique | Flag | Status |
-|---|---|---|---|
-| [Layered Onion](Layered%20Onion/) | Peel nested encryption layers (`chall.enc`) | `KPMG_CTF{p33l_th3_l4y3rs_l1k3_4n_0n10n}` | ✅ |
+| Challenge | Technique | Status |
+|---|---|---|
+| [Layered Onion](Layered%20Onion/) | Peel nested encryption layers (`chall.enc`) | ✅ |
 
 ### AI / LLM security
 
-| Challenge | Technique | Flag | Status |
-|---|---|---|---|
-| AcmeBank Assistant | Excessive-agency abuse of a hosted LLM | `KPMG_CTF{7HOXQW3WEDBjlIFuUdaaIGgacWMCyDpONnA1pmRwfAq2}` | ✅ |
-| SecureBot Support | System-prompt leak via a benign "echo the context" framing | `KPMG_CTF{P7FlbtvaKXBowK_Oy5sVrWOd25-rCZCSHOJnMPDMPXXh}` | ✅ |
-| WebSummarizer Pro | LLM security (summarizer abuse) | `KPMG_CTF{ZPaeEp2W-unQsL6LbxluBbPRDP-yZh-XOLFF6ejjpSDc}` | ✅ |
+| Challenge | Technique | Status |
+|---|---|---|
+| AcmeBank Assistant | Excessive-agency abuse of a hosted LLM | ✅ |
+| SecureBot Support | System-prompt leak via a benign "echo the context" framing | ✅ |
+| WebSummarizer Pro | LLM security (summarizer abuse) | ✅ |
 
 ---
 
@@ -153,7 +153,17 @@ from this repository. Only the reusable technique is documented:
 
 ---
 
+## Credits
+
+The Voodoo "Spirit of Death" 2 root was obtained using worawit's public
+proof-of-concept for the sudo "Baron Samedit" vulnerability (CVE-2021-3156):
+[exploit_nss.py](https://github.com/worawit/CVE-2021-3156/blob/main/exploit_nss.py).
+All credit for that exploit goes to its author.
+
+---
+
 ## Disclaimer
 
-Educational security research against an authorized CTF. Do not use any technique or
-tool here against systems without explicit authorization.
+This repository was made purely for educational purposes, as part of the
+**KPMG CTF 2026** challenge. Do not use any technique or tool here against systems
+without explicit authorization.
