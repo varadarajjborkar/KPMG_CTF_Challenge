@@ -244,14 +244,6 @@ Notes / rabbit-holes (not needed for the flag):
    ssh_run_maya.exp, redis_dump.txt.
 
 
-=====================================================================
- CHALLENGE 3 - Welcome Challenge 5 / "Are you a robot?"  (CTFd web)
-=====================================================================
-Status: IN PROGRESS (middle-man workflow - external site not shared).
-Hint: challenge text "Are you a robot? Find the flag." + page loads reCAPTCHA.
-Read: "robot" => fetch /robots.txt at the site root; flag is usually in a
-comment there or behind a Disallow: path. Awaiting robots.txt contents.
-
 ================================================================================
 ENTRY 12 - Corrupted Vision  (KPMG CTF)
 ================================================================================
