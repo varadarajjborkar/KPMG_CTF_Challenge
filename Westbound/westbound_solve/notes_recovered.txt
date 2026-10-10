@@ -1,0 +1,11 @@
+tidewatch stays public because nobody reads a recon tool, and nobody
+reads the history of one.
+
+kestrel paid for the audit and got the copy instead. the marker they are
+hunting is in this export, planted where it will outlive the job:
+
+  KPMG_CTF{g1t_r3m3mb3r5_wh4t_y0u_d3l3t3}
+
+that string is the whole point of the exercise. they will not read this far.
+
+- t.v.

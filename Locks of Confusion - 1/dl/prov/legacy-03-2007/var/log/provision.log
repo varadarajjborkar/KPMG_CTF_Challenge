@@ -1,0 +1,9 @@
+Nov 14 2007 09:12:01 legacy-03 kickstart: base install complete (Debian 4.0r0 "etch")
+Nov 14 2007 09:14:55 legacy-03 apt: installing openssh-server (4.3p2-9)
+Nov 14 2007 09:15:02 legacy-03 apt: installing openssl (0.9.8c-4)
+Nov 14 2007 09:15:03 legacy-03 apt: installing libssl0.9.8 (0.9.8c-4)
+Nov 14 2007 09:18:40 legacy-03 provision: creating service account svc-legacydb (uid 1500)
+Nov 14 2007 09:19:12 legacy-03 provision: ssh-keygen -t rsa -b 2048 -f /home/svc-legacydb/.ssh/id_rsa -N ''
+Nov 14 2007 09:19:13 legacy-03 provision: public key installed to authorized_keys for svc-legacydb
+Nov 14 2007 09:20:01 legacy-03 provision: provisioning checklist v3 step 4.2 complete (svc account + keypair)
+Nov 14 2007 09:31:44 legacy-03 provision: handoff to DB team, provisioning closed

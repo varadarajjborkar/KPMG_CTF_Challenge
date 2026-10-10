@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!--
+    "There are no accidents," said Master Oogway.
+
+    Po, if you are reading this: you already have a name and a room in the
+    palace. You just haven't found the key yet.
+
+      disciple: po
+      key: skadoosh1
+
+    Present these at the gate. Yesterday is history, tomorrow is a mystery,
+    but today is a gift, which is probably why they call it the present.
+  -->
+  <circle cx="32" cy="32" r="30" fill="#0a2f26"/>
+  <circle cx="32" cy="32" r="24" fill="#1f9d75"/>
+  <path d="M32 14c-8 4-13 10-13 18 0 8 6 15 13 18 7-3 13-10 13-18 0-8-5-14-13-18z" fill="#f3e6c8" opacity="0.9"/>
+  <circle cx="32" cy="32" r="6" fill="#0a2f26"/>
+</svg>

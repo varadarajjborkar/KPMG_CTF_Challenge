@@ -1,0 +1,10 @@
+# Excluded from the public repo: this OSINT challenge's trail ended at a real,
+# identifiable person's data. The reusable method is documented in the writeup;
+# the raw personal data (saved profile page, screenshots) is deliberately not published.
+A Clean Trail/
+
+# Python / OS cruft
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store

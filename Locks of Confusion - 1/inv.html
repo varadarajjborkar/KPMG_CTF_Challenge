@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Inventory - Internal Ops Portal</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="brand">Internal Ops Portal</div>
+    <div class="meta">host: ops-gw01 &middot; env: internal-ops</div>
+  </header>
+  <nav class="main">
+    <a href="/">Dashboard</a>
+    <a href="/inventory">Inventory</a>
+    <a href="/monitoring">Monitoring</a>
+    <a href="/status">Service Status</a>
+    <a href="/tickets">Tickets</a>
+    <a href="/backups">Backups</a>
+    <a href="/dns">DNS</a>
+    <a href="/network">Network</a>
+    <a href="/cron-reports">Cron Reports</a>
+    <a href="/docs">Docs / Wiki</a>
+    <a href="/wiki/notes">Notes</a>
+  </nav>
+  <main>
+    
+<h1>Server Inventory</h1>
+<p class="lead">28 hosts</p>
+<table>
+  <tr><th>Host</th><th>IP</th><th>OS</th><th>Role</th><th>Status</th></tr>
+  
+  <tr>
+    <td><a href="/inventory/web-01">web-01</a></td>
+    <td>10.50.4.11</td>
+    <td>Ubuntu 22.04 LTS</td>
+    <td>frontend web tier</td>
+    <td>healthy</td>
+  </tr>
+  
+  <tr>
+    <td><a href="/inventory/web-02">web-02</a></td>
+    <td>10.50.4.12</td>
+    <td>Ubuntu 22.04 LTS</td>
+    <td>frontend web tier</td>
+    <td>healthy</td>
+  </tr>
+  
+  <tr>
+    <td><a href="/inventory/web-03">web-03</a></td>
+    <td>10.50.4.13</td>
+    <td>Ubuntu 22.04 LTS</td>
+    <td>frontend web tier</td>
+    <td>healthy</td>
+  </tr>
+  
+  <tr>
+    <td><a href="/inventory/app-01">app-01</a></td>
+    <td>10.50.5.21</td>
+    <td>Debian 12</td>
+    <td>application tier</td>
+    <td>healthy</td>
+  </tr>
+  
+  <tr>
+    <td><a href="/inventory/app-02">app-02</a></td>
+    <td>10.50.5.22</td>
+    <td>Debian 12</td>
+    <td>application tier</td>
+    <td>healthy</td>
+  </tr>
+  
+  <tr>
+    <td><a href="/inventory/app-03">app-03</a></td>
+    <td>10.50.5.23</td>
+    <td>Debian 12</td>
+    <td>application tier</td>
+    <td>warning: disk 81%</td>
+  </tr>
+  
+  <tr>
+    <td><a href="/inventory/db-01">db-01</a></td>
+    <td>10.50.6.31</td>
+    <td>Debian 12</td>
+    <td>primary postgres</td>
+    <td>healthy</td>
+  </tr>
+  
+  <tr>
+    <td><a href="/inventory/db-02">db-02</a></td>
+    <td>10.50.6.32</td>
+    <td>Debian 12</td>
+    <td>postgres replica</td>
+    <td>healthy</td>
+  </tr>
+  
+  <tr>
+    <td><a href="/inventory/db-03">db-03</a></td>
+    <td>10.50.6.33</td>
+    <td>Debian 12</td>
+    <td>postgres replica</td>
+    <td>healthy</td>
+  </tr>
+  
+  <tr>
+    <td><a href="/inventory/cache-01">cache-01</a></td>
+    <td>10.50.7.41</td>
+    <td>Ubuntu 22.04 LTS</td>
+    <td>redis cache</td>
+    <td>healthy</td>
+  </tr>
+  
+  <tr>
+    <td><a href="/inventory/cache-02">cache-02</a></td>
+    <td>10.50.7.42</td>
+    <td>Ubuntu 22.04 LTS</td>
+    <td>redis cache</td>
+    <td>healthy</td>
+  </tr>
+  
+  <tr>
+    <td><a href="/inventory/lb-01">lb-01</a></td>
+    <td>10.50.2.5</td>
+    <td>Ubuntu 22.04 LTS</td>
+    <td>haproxy load balancer</td>
+    <td>healthy</td>
+  </tr>
+  
+  <tr>
+    <td><a href="/inventory/lb-02">lb-02</a></td>
+    <td>10.50.2.6</td>
+    <td>Ubuntu 22.04 LTS</td>
+    <td>haproxy load balancer (standby)</td>
+    <td>healthy</td>
+  </tr>
+  
+  <tr>
+    <td><a href="/inventory/mon-01">mon-01</a></td>
+    <td>10.50.9.10</td>
+    <td>Debian 12</td>
+    <td>prometheus + grafana</td>
+    <td>healthy</td>
+  </tr>
+  
+  <tr>
+    <td><a href="/inventory/dns-01">dns-01</a></td>
+    <td>10.50.1.2</td>
+    <td>Debian 12</td>
+    <td>internal bind9 resolver</td>
+    <td>healthy</td>
+  </tr>
+  
+  <tr>
+    <td><a href="/inventory/dns-02">dns-02</a></td>
+    <td>10.50.1.3</td>
+    <td>Debian 12</td>
+    <td>internal bind9 resolver (secondary)</td>
+    <td>healthy</td>
+  </tr>
+  
+  <tr>
+    <td><a href="/inventory/batch-01">batch-01</a></td>
+    <td>10.50.8.15</td>
+    <td>Ubuntu 20.04 LTS</td>
+    <td>cron/batch processing</td>
+    <td>healthy</td>
+  </tr>
+  
+  <tr>
+    <td><a href="/inventory/batch-02">batch-02</a></td>
+    <td>10.50.8.16</td>
+    <td>Ubuntu 20.04 LTS</td>
+    <td>cron/batch processing</td>
+    <td>healthy</td>
+  </tr>
+  
+  <tr>
+    <td><a href="/inventory/ci-01">ci-01</a></td>
+    <td>10.50.3.9</td>
+    <td>Debian 12</td>
+    <td>jenkins ci runner</td>
+    <td>warning: queue depth 12</td>
+  </tr>
+  
+  <tr>
+    <td><a href="/inventory/git-01">git-01</a></td>
+    <td>10.50.3.4</td>
+    <td>Debian 12</td>
+    <td>internal git hosting</td>
+    <td>healthy</td>
+  </tr>
+  
+  <tr>
+    <td><a href="/inventory/vpn-01">vpn-01</a></td>
+    <td>10.50.1.20</td>
+    <td>Ubuntu 22.04 LTS</td>
+    <td>wireguard concentrator</td>
+    <td>healthy</td>
+  </tr>
+  
+  <tr>
+    <td><a href="/inventory/mail-01">mail-01</a></td>
+    <td>10.50.1.30</td>
+    <td>Debian 12</td>
+    <td>internal mail relay</td>
+    <td>healthy</td>
+  </tr>
+  
+  <tr>
+    <td><a href="/inventory/legacy-01">legacy-01</a></td>
+    <td>10.50.12.12</td>
+    <td>Debian 5.0 (lenny)</td>
+    <td>legacy file server</td>
+    <td>decommissioned -- retained for archival/compliance</td>
+  </tr>
+  
+  <tr>
+    <td><a href="/inventory/legacy-02">legacy-02</a></td>
+    <td>10.50.12.13</td>
+    <td>CentOS 5.3</td>
+    <td>legacy monitoring collector</td>
+    <td>decommissioned -- retained for archival/compliance</td>
+  </tr>
+  
+  <tr>
+    <td><a href="/inventory/legacy-03">legacy-03</a></td>
+    <td>10.50.12.14</td>
+    <td>Debian 4.0 (etch)</td>
+    <td>legacy DB read-replica</td>
+    <td>decommissioned -- retained for archival/compliance</td>
+  </tr>
+  
+  <tr>
+    <td><a href="/inventory/wiki-01">wiki-01</a></td>
+    <td>10.50.3.6</td>
+    <td>Debian 12</td>
+    <td>internal wiki/confluence-alike</td>
+    <td>healthy</td>
+  </tr>
+  
+  <tr>
+    <td><a href="/inventory/backup-01">backup-01</a></td>
+    <td>10.50.10.2</td>
+    <td>Ubuntu 22.04 LTS</td>
+    <td>backup coordinator</td>
+    <td>healthy</td>
+  </tr>
+  
+  <tr>
+    <td><a href="/inventory/ops-gw01">ops-gw01</a></td>
+    <td>10.50.9.7</td>
+    <td>Ubuntu 22.04 LTS</td>
+    <td>consolidated ops gateway (P2V host cluster)</td>
+    <td>active -- hosts several migrated legacy workloads post P2V consolidation</td>
+  </tr>
+  
+</table>
+<p class="lead" style="margin-top:60px;">
+  It's not the j0urn3y nor the d3stin4ti0n, it's the l3g4cy
+</p>
+<!-- You'll find the answer in the right place and that's your ticket to the next phase. -->
+
+  </main>
+  <footer>
+    Internal Ops Portal &middot; ops-gw01 &middot; for authorized personnel only &middot; build portal-frontend@3.4.1
+  </footer>
+</body>
+</html>

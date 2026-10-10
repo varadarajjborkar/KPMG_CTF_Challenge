@@ -1,0 +1,9 @@
+# fragment recovered from tape -- sshd_config, legacy-03, as of last known good backup
+Protocol 2
+SyslogFacility AUTH
+LogLevel INFO
+PermitRootLogin no
+PasswordAuthentication yes
+X11Forwarding yes
+PrintMotd yes
+Subsystem sftp /usr/lib/openssh/sftp-server

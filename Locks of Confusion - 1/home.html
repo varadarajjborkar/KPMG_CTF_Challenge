@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Dashboard - Internal Ops Portal</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="brand">Internal Ops Portal</div>
+    <div class="meta">host: ops-gw01 &middot; env: internal-ops</div>
+  </header>
+  <nav class="main">
+    <a href="/">Dashboard</a>
+    <a href="/inventory">Inventory</a>
+    <a href="/monitoring">Monitoring</a>
+    <a href="/status">Service Status</a>
+    <a href="/tickets">Tickets</a>
+    <a href="/backups">Backups</a>
+    <a href="/dns">DNS</a>
+    <a href="/network">Network</a>
+    <a href="/cron-reports">Cron Reports</a>
+    <a href="/docs">Docs / Wiki</a>
+    <a href="/wiki/notes">Notes</a>
+  </nav>
+  <main>
+    
+<h1>Dashboard</h1>
+<p class="lead">Environment overview &middot; 28 hosts tracked</p>
+
+<div class="card-grid">
+  <div class="card"><div class="num">28</div><div class="label">Hosts in inventory</div></div>
+  <div class="card"><div class="num">20</div><div class="label">Tickets (all closed)</div></div>
+  <div class="card"><div class="num">10</div><div class="label">Monitored services</div></div>
+  <div class="card"><div class="num">99.97%</div><div class="label">30-day uptime</div></div>
+</div>
+
+<h2>Service status</h2>
+<table>
+  <tr><th>Service</th><th>State</th><th>Detail</th></tr>
+  
+  <tr>
+    <td>nginx (web tier)</td>
+    <td><span class="badge ok">healthy</span></td>
+    <td>3/3 instances up</td>
+  </tr>
+  
+  <tr>
+    <td>haproxy</td>
+    <td><span class="badge ok">healthy</span></td>
+    <td>active/standby, failover tested 2026-08-02</td>
+  </tr>
+  
+  <tr>
+    <td>postgresql replication</td>
+    <td><span class="badge ok">healthy</span></td>
+    <td>lag 0.0s</td>
+  </tr>
+  
+  <tr>
+    <td>redis cluster</td>
+    <td><span class="badge ok">healthy</span></td>
+    <td>2/2 nodes up</td>
+  </tr>
+  
+  <tr>
+    <td>bind9 resolvers</td>
+    <td><span class="badge ok">healthy</span></td>
+    <td>2/2 up, zone transfer OK</td>
+  </tr>
+  
+  <tr>
+    <td>jenkins</td>
+    <td><span class="badge warn">warning</span></td>
+    <td>build queue depth 12 (see TICK-4588)</td>
+  </tr>
+  
+  <tr>
+    <td>wireguard concentrator</td>
+    <td><span class="badge ok">healthy</span></td>
+    <td>41 active peers</td>
+  </tr>
+  
+  <tr>
+    <td>mail relay</td>
+    <td><span class="badge ok">healthy</span></td>
+    <td>queue depth 0</td>
+  </tr>
+  
+  <tr>
+    <td>sshd (ops-gw01)</td>
+    <td><span class="badge ok">healthy</span></td>
+    <td>accepting connections</td>
+  </tr>
+  
+  <tr>
+    <td>prometheus</td>
+    <td><span class="badge ok">healthy</span></td>
+    <td>scrape success rate 99.98%</td>
+  </tr>
+  
+</table>
+
+  </main>
+  <footer>
+    Internal Ops Portal &middot; ops-gw01 &middot; for authorized personnel only &middot; build portal-frontend@3.4.1
+  </footer>
+</body>
+</html>
