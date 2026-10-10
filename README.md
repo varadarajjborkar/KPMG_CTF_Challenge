@@ -21,7 +21,7 @@ files and scripts live in their own folders.
 - [`ctf_methods_journal.md`](ctf_methods_journal.md) - methodology / lessons-learned journal.
 - One folder per challenge that shipped files (artifacts, solve scripts, captures).
 
-Legend: ✅ solved | 🟡 in progress / partial
+Legend: ✅ solved
 
 ---
 
@@ -36,7 +36,6 @@ Legend: ✅ solved | 🟡 in progress / partial
 | [The Dragon Warrior](The%20Dragon%20Warrior/) | Web (OpenAPI-driven) logic flaw | `KPMG_CTF{LC0Z9cjBA3yGd_geR1M-dbxKmfj7gNVZMNluLNgrzOF4}` | ✅ |
 | DevNote | SQL injection in a "dev query" interface | `KPMG_CTF{IVQtP6rDVaCc4GTZEoQZyLCet9XOYkO66dhXENV6C1dZ}` | ✅ |
 | [Onboardx](Onboardx/) | **Mass-assignment -> JWT RS256/HS256 confusion -> ImageTragick RCE** (see [featured writeup](#featured-onboardx)) | `KPMG_CTF{-I3OHbxv4qDtW4EuQvmAiQeU4JL78f9Sim4RGA5alSK9}` | ✅ |
-| "Are you a robot?" (Welcome 5) | CTFd web / `robots.txt` trail | - | 🟡 |
 
 ### API security
 
@@ -103,7 +102,6 @@ Legend: ✅ solved | 🟡 in progress / partial
 | AcmeBank Assistant | Excessive-agency abuse of a hosted LLM | `KPMG_CTF{7HOXQW3WEDBjlIFuUdaaIGgacWMCyDpONnA1pmRwfAq2}` | ✅ |
 | SecureBot Support | System-prompt leak via a benign "echo the context" framing | `KPMG_CTF{P7FlbtvaKXBowK_Oy5sVrWOd25-rCZCSHOJnMPDMPXXh}` | ✅ |
 | WebSummarizer Pro | LLM security (summarizer abuse) | `KPMG_CTF{ZPaeEp2W-unQsL6LbxluBbPRDP-yZh-XOLFF6ejjpSDc}` | ✅ |
-| [RAG Red-Team](RAG%20Red-Team/) | RAG red-teaming plan | - | 🟡 |
 
 ---
 

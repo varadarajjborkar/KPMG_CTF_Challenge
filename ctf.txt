@@ -11,9 +11,6 @@ FLAGS
 2) Westbound  (OSINT / forensics bundle: westbound.zip)
    KPMG_CTF{g1t_r3m3mb3r5_wh4t_y0u_d3l3t3}
 
-3) Welcome Challenge 5 / "Are you a robot?"  (CTFd web challenge)
-   -> ROBOTS.TXT path, unsolved at time of writing (awaiting robots.txt contents)
-
 4) Layered "onion"  (chall.enc)
    KPMG_CTF{p33l_th3_l4y3rs_l1k3_4n_0n10n}
 
